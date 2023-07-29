@@ -1,14 +1,17 @@
-import React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import { Box } from '@mui/material';
+import React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import Header from "../header/Header";
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <CssBaseline />
-      <Box >
-        {children}
-      </Box>
+      <Header />
+      {children}
     </>
   );
 };
