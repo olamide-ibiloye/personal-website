@@ -58,20 +58,20 @@ const Header = (props: Props) => {
           color="transparent"
           component="nav"
           sx={{
-            alignItems: { sm: "center" },
+            alignItems: { md: "center" },
             boxShadow: 0,
           }}
         >
           <Toolbar sx={{ py: 3 }}>
-            <Box sx={{ borderRadius: 20, backgroundColor: "grey", p: 2 }}>
+            <Box sx={{ borderRadius: 20, backgroundColor: { md: "primary.main" }, p: 2 }}>
               <IconButton
                 edge="start"
                 onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { sm: "none" }, color: "common.white" }}
+                sx={{ mr: 2, display: { md: "none" }, color: "common.white" }}
               >
                 <MenuIcon />
               </IconButton>
-              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Box sx={{ display: { xs: "none", md: "block" } }}>
                 {navItems.map((item) => (
                   <Button key={item} sx={{ color: "#fff", mx: 3, fontSize: 20 }}>
                     {item}

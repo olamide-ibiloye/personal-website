@@ -1,10 +1,9 @@
 const palette = {
   common: { black: "#000", white: "#fff" },
-  primary: { main: "#04c9c2" },
+  primary: { main: "#A1009B" },
   background: {
     paper: "#000",
-    default: "hsla(50, 31%, 90%, 1)",
-    neutral: "#000",
+    default: "#000",
   },
 };
 

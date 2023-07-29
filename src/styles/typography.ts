@@ -5,7 +5,28 @@ const typography: TypographyOptions = {
   fontWeightMedium: 600,
   fontWeightBold: 700,
   h1: {
-    fontSize: 200,
+    fontSize: 180,
+  },
+  h2: {
+    fontSize: 130,
+  },
+  h3: {
+    fontSize: 90,
+  },
+  h4: {
+    fontSize: 70,
+  },
+  h5: {
+    fontSize: 50,
+  },
+  h6: {
+    fontSize: 40,
+  },
+  body1: {
+    fontSize: 30,
+  },
+  subtitle1: {
+    fontSize: 30,
   },
   button: {
     fontFamily: "Raleway",

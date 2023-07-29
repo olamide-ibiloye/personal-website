@@ -30,7 +30,7 @@ const Body = ({
         pt: paddingTop,
         pb: paddingBottom,
         py: paddingY,
-        px: paddingX,
+        px: paddingX || { xs: 4, md: 0 },
         pl: paddingLeft,
         pr: paddingRight,
       }}
