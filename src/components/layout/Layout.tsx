@@ -1,5 +1,5 @@
 import React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
+import { Box, CssBaseline } from "@mui/material";
 import Header from "../header/Header";
 import DataProvider from "../../providers/DataProvider";
 
@@ -13,7 +13,14 @@ const Layout = ({ children }: LayoutProps) => {
       <CssBaseline />
       <DataProvider>
         <Header />
+        {/* <Box
+        sx={{
+          backgroundColor: "#FFDEE9",
+          backgroundImage: "linear-gradient(0deg, #FFFFFF 0%, #e0a8dc 100%)",
+        }}
+      > */}
         {children}
+        {/* </Box> */}
       </DataProvider>
     </>
   );

@@ -1,27 +1,13 @@
-import React, { useState, createContext } from "react";
+import React, { createContext } from "react";
 
-export const DataContext = createContext({
-  mobileOpen: false,
-  setMobileOpen: () => {},
-  handleDrawerToggle: () => {},
-});
+export const DataContext = createContext({});
 
 interface DataProviderProps {
   children: React.ReactNode;
 }
 
 const DataProvider = ({ children }: DataProviderProps) => {
-  const [mobileOpen, setMobileOpen] = useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-
-  let data = {
-    mobileOpen,
-    setMobileOpen,
-    handleDrawerToggle,
-  };
+  let data = {};
   return <DataContext.Provider value={data}>{children}</DataContext.Provider>;
 };
 

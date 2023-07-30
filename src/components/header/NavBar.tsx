@@ -1,7 +1,5 @@
-import { AppBar, Toolbar, Box, IconButton, Button } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import React, { useContext } from "react";
-import { DataContext } from "../../providers/DataProvider";
+import { AppBar, Toolbar, Box } from "@mui/material";
+import React from "react";
 
 interface NavBarProps {
   navItems: Array<string>;
@@ -11,35 +9,38 @@ interface NavBarProps {
 const toolBarSpacing = { py: 3 };
 
 const appBarStyle = {
-  alignItems: { md: "center" },
+  alignItems: { xs: "center" },
   boxShadow: 0,
 };
 
-const buttonsContainerStyle = { display: { xs: "none", md: "block" } };
+const buttonsContainerStyle = { display: "flex", flexDirection: "row" };
 
-const navButtonsContainer = { borderRadius: 20, backgroundColor: { md: "primary.main" }, p: 1 };
+const navButtonsContainer = {
+  borderRadius: 20,
+  // backgroundColor: "rgba(255, 255, 255, 0.3)",
+  backgroundColor: "primary.main",
+  py: 2,
+  px: 1,
+};
 
-const navButtonsStyle = { color: "#fff", mx: 3, fontSize: 20 };
-
-const iconButtonStyle = { mr: 2, display: { md: "none" }, color: "common.white" };
-
+const navButtonsStyle = {
+  color: "common.white",
+  mx: { xs: 2, md: 4 },
+  fontSize: { xs: 13, sm: 16, md: 20 },
+  fontFamily: "Helvetica",
+};
 // End of styles
 
 const NavBar = ({ navItems }: NavBarProps) => {
-  const { handleDrawerToggle } = useContext(DataContext);
-
   return (
     <AppBar color="transparent" component="nav" sx={appBarStyle}>
       <Toolbar sx={toolBarSpacing}>
         <Box sx={navButtonsContainer}>
-          <IconButton edge="start" onClick={() => handleDrawerToggle()} sx={iconButtonStyle}>
-            <MenuIcon />
-          </IconButton>
           <Box sx={buttonsContainerStyle}>
             {navItems.map((item) => (
-              <Button key={item} sx={navButtonsStyle}>
+              <Box key={item} sx={navButtonsStyle}>
                 {item}
-              </Button>
+              </Box>
             ))}
           </Box>
         </Box>

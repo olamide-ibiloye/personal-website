@@ -28,7 +28,7 @@ const textStyle = { my: 4, fontFamily: "Helvetica" };
 
 const Home = () => {
   return (
-    <Body paddingY={15}>
+    <Body paddingY={20}>
       <Box sx={containerStyle}>
         <Typography variant="h1" color="common.white">
           Hi.
