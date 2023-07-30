@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
         <Box
           sx={{
             backgroundColor: "#FFDEE9",
-            backgroundImage: "linear-gradient(0deg, #FFFFFF 0%, #3c93e0 100%)",
+            backgroundImage: "linear-gradient(0deg, #FFFFFF 0%, #a6d4fc 100%)",
           }}
         >
           {children}
