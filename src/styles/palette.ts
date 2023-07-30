@@ -3,7 +3,7 @@ const palette = {
   primary: { main: "#A1009B" },
   background: {
     paper: "#000",
-    default: "#000",
+    default: "#5b4059",
   },
 };
 
