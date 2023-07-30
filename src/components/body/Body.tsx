@@ -25,12 +25,12 @@ const Body = ({
     <Box
       sx={{
         width: "100%",
-        maxWidth: 1500,
+        maxWidth: 1200,
         margin: "auto",
         pt: paddingTop,
         pb: paddingBottom,
         py: paddingY,
-        px: paddingX || { xs: 4, md: 0 },
+        px: paddingX || { xs: 5, lg: 0 },
         pl: paddingLeft,
         pr: paddingRight,
       }}
