@@ -5,11 +5,11 @@ const typography: TypographyOptions = {
   fontWeightMedium: 600,
   fontWeightBold: 700,
   h1: {
-    fontSize: 180,
+    fontSize: 150,
     lineHeight: 1,
   },
   h2: {
-    fontSize: 120,
+    fontSize: 110,
   },
   h3: {
     fontSize: 80,
