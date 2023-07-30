@@ -17,14 +17,13 @@ const buttonsContainerStyle = { display: "flex", flexDirection: "row" };
 
 const navButtonsContainer = {
   borderRadius: 20,
-  // backgroundColor: "rgba(255, 255, 255, 0.3)",
-  backgroundColor: "primary.main",
+  backgroundColor: "rgba(255, 255, 255, 0.3)",
   py: 2,
   px: 1,
 };
 
 const navButtonsStyle = {
-  color: "common.white",
+  color: "primary.main",
   mx: { xs: 2, md: 4 },
   fontSize: { xs: 13, sm: 16, md: 20 },
   fontFamily: "Helvetica",

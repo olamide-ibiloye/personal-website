@@ -1,6 +1,5 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import Body from "../body/Body";
 import NavBar from "./NavBar";
 
@@ -18,8 +17,6 @@ const Header = () => {
     <Body>
       <Box sx={headerStyle}>
         <NavBar navItems={navItems} />
-
-        {/* <Toolbar /> */}
       </Box>
     </Body>
   );

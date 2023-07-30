@@ -30,13 +30,13 @@ const Home = () => {
   return (
     <Body paddingY={20}>
       <Box sx={containerStyle}>
-        <Typography variant="h1" color="common.white">
+        <Typography variant="h1" color="primary.main">
           Hi.
         </Typography>
-        <Typography variant="h1" color="common.white">
+        <Typography variant="h1" color="primary.main">
           I'm Olamide.
         </Typography>
-        <Typography variant="body1" color="common.white" sx={textStyle}>
+        <Typography variant="body1" color="primary.main" sx={textStyle}>
           I am delighted to extend a warm welcome to you as you step into my digital space. This
           website is a reflection of my journey, passions, and aspirations, and I am thrilled to
           share it with you. My commitment to excellence drives me to continually evolve and grow,

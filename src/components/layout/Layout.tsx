@@ -13,14 +13,14 @@ const Layout = ({ children }: LayoutProps) => {
       <CssBaseline />
       <DataProvider>
         <Header />
-        {/* <Box
-        sx={{
-          backgroundColor: "#FFDEE9",
-          backgroundImage: "linear-gradient(0deg, #FFFFFF 0%, #e0a8dc 100%)",
-        }}
-      > */}
-        {children}
-        {/* </Box> */}
+        <Box
+          sx={{
+            backgroundColor: "#FFDEE9",
+            backgroundImage: "linear-gradient(0deg, #FFFFFF 0%, #3c93e0 100%)",
+          }}
+        >
+          {children}
+        </Box>
       </DataProvider>
     </>
   );
