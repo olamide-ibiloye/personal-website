@@ -2,6 +2,8 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import Body from "../body/Body";
 import userImage from "../../images/olamide.webp";
+import HeaderFont from "../typeface/HeaderFont";
+import BodyFont from "../typeface/BodyFont";
 
 const containerStyle = {
   textAlign: "center",
@@ -24,25 +26,24 @@ const userImageStyle = {
   border: "5px solid #fff",
 };
 
-const textStyle = { my: 4, fontFamily: "Helvetica" };
+const textStyle = { my: 4 };
 
 const Home = () => {
   return (
     <Body paddingY={20}>
       <Box sx={containerStyle}>
-        <Typography variant="h1" color="primary.main">
-          Hi.
-        </Typography>
-        <Typography variant="h1" color="primary.main">
-          I'm Olamide.
-        </Typography>
-        <Typography variant="body1" color="primary.main" sx={textStyle}>
+        <HeaderFont>Hi.</HeaderFont>
+
+        <HeaderFont>I'm Olamide.</HeaderFont>
+
+        <BodyFont style={textStyle}>
           I am delighted to extend a warm welcome to you as you step into my digital space. This
           website is a reflection of my journey, passions, and aspirations, and I am thrilled to
           share it with you. My commitment to excellence drives me to continually evolve and grow,
           both personally and professionally.
-        </Typography>
+        </BodyFont>
       </Box>
+
       <Box sx={userImageStyle} />
     </Body>
   );

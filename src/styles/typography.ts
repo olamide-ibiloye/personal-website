@@ -27,7 +27,7 @@ const typography: TypographyOptions = {
     fontSize: 25,
   },
   subtitle1: {
-    fontSize: 25,
+    fontSize: 17,
   },
   button: {
     fontFamily: "Raleway",

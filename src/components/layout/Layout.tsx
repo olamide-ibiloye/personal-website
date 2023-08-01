@@ -2,6 +2,7 @@ import React from "react";
 import { Box, CssBaseline } from "@mui/material";
 import Header from "../header/Header";
 import DataProvider from "../../providers/DataProvider";
+import Footer from "../footer/Footer";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -21,6 +22,7 @@ const Layout = ({ children }: LayoutProps) => {
         >
           {children}
         </Box>
+        <Footer />
       </DataProvider>
     </>
   );

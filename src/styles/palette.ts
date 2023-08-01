@@ -1,6 +1,6 @@
 const palette = {
   common: { black: "#000", white: "#ede6e6" },
-  primary: { main: "#084d89", light: "#a6d4fc" },
+  primary: { main: "#556CA9", light: "#cde4f7" },
   background: {
     paper: "#fff",
     default: "#fff",
