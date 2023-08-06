@@ -3,7 +3,13 @@ import Box from "@mui/material/Box";
 import Body from "../body/Body";
 import NavBar from "./NavBar";
 
-const navItems = ["Home", "About", "Projects", "Blog", "Contact"];
+const navItems = [
+  { label: "Home", key: `/` },
+  { label: "About", key: `/about/` },
+  { label: "Projects", key: `/projects/` },
+  { label: "Blog", key: `/blog/` },
+  { label: "Contact", key: `/contact/` },
+];
 
 const headerStyle = {
   display: "flex",

@@ -1,8 +1,14 @@
 import { AppBar, Toolbar, Box } from "@mui/material";
+import { Link } from "gatsby";
 import React from "react";
 
+interface NavItem {
+  label: string;
+  key: string;
+}
+
 interface NavBarProps {
-  navItems: Array<string>;
+  navItems: Array<NavItem>;
 }
 
 // Start of styles
@@ -28,6 +34,7 @@ const navButtonsStyle = {
   fontSize: { xs: 13, sm: 16, md: 20 },
   fontFamily: "Helvetica",
 };
+
 // End of styles
 
 const NavBar = ({ navItems }: NavBarProps) => {
@@ -37,9 +44,9 @@ const NavBar = ({ navItems }: NavBarProps) => {
         <Box sx={navButtonsContainer}>
           <Box sx={buttonsContainerStyle}>
             {navItems.map((item) => (
-              <Box key={item} sx={navButtonsStyle}>
-                {item}
-              </Box>
+              <Link key={item.key} to={item.key} style={{ textDecoration: "none" }}>
+                <Box sx={navButtonsStyle}>{item.label}</Box>
+              </Link>
             ))}
           </Box>
         </Box>

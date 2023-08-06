@@ -18,9 +18,21 @@ const Footer = () => {
             gap: 2,
           }}
         >
-          <FooterLink name="LinkedIn" icon={<LinkedIn sx={{ color: "lightGrey" }} />} link="" />
-          <FooterLink name="GitHub" icon={<GitHub sx={{ color: "lightGrey" }} />} link="" />
-          <FooterLink name="Email" icon={<Email sx={{ color: "lightGrey" }} />} link="" />
+          <FooterLink
+            name="LinkedIn"
+            icon={<LinkedIn sx={{ color: "lightGrey" }} />}
+            link="https://www.linkedin.com/in/olamide-ibiloye/"
+          />
+          <FooterLink
+            name="GitHub"
+            icon={<GitHub sx={{ color: "lightGrey" }} />}
+            link="https://github.com/olamide-ibiloye"
+          />
+          <FooterLink
+            name="Email"
+            icon={<Email sx={{ color: "lightGrey" }} />}
+            link="mailto:olamideibiloye@gmail.com"
+          />
           <FooterLink name="CV" icon={<Article sx={{ color: "lightGrey" }} />} link="" />
         </Box>
 
