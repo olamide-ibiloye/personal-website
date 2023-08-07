@@ -23,7 +23,7 @@ const buttonsContainerStyle = { display: "flex", flexDirection: "row" };
 
 const navButtonsContainer = {
   borderRadius: 20,
-  backgroundColor: "rgba(255, 255, 255, 0.5)",
+  backgroundColor: "rgba(0, 0, 0, 0.3)",
   py: 2,
   px: 1,
 };

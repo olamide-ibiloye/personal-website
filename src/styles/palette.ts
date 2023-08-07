@@ -1,9 +1,9 @@
 const palette = {
   common: { black: "#000", white: "#ede6e6" },
-  primary: { main: "#224291", light: "#cde4f7" },
+  primary: { main: "#d1ddf9", light: "#cde4f7" },
   background: {
-    paper: "#fff",
-    default: "#fff",
+    paper: "#3362ce",
+    default: "#3362ce",
   },
 };
 
