@@ -11,7 +11,7 @@ interface BodyFontProp {
 
 const BodyFont = ({
   variant = "body1",
-  color = "primary.main",
+  color = "primary.light",
   fontFamily = "Helvetica",
   children,
   style,
